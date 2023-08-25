@@ -1,0 +1,107 @@
+/*9. Print the sum, difference and product of two complex numbers by creating a class
+named 'Complex' with separate functions for each operation whose real and imaginary
+parts are entered by the user*/
+#include <bits/stdc++.h>
+using namespace std;
+class Complex{
+
+public:
+    int a,b,r,p;
+    char ch,dh,fh,jh;
+void get_numbers_with_Nazrana(){
+cout<<"enter 2 complex number :";
+cin>>a>>ch>>fh>>r;
+cin>>b>>dh>>jh>>p;
+
+//cin.ignore();
+}
+void calculate_numbers_with_Nazrana(){
+int c,d,f,e,m,n,g;
+c=a+b;e=r+p;
+d=a-b;m=r-p;
+f=(-1*a*b)+(r*p);
+g=(a*p)+(b*r);
+if(e<0)
+cout<<"the sum of 2 complex number : "<<c<<"i"<<"-"<<e<<endl;
+else
+cout<<"the sum of 2  complex number : "<<c<<"i"<<"+"<<e<<endl;
+if(m<0)
+cout<<"the differace of 2  complex number : "<<d<<"i"<<"-"<<m<<endl;
+else
+cout<<"the differace of 2 complex number : "<<d<<"i"<<"+"<<m<<endl;
+if(f<0 && g>0)
+cout<<"the product of 2  complex number : -"<<f<<"i"<<"+"<<g<<endl;
+else if(f>0 && g>0)
+cout<<"the product of 2  complex number : "<<f<<"i"<<"+"<<g<<endl;
+else if(f>0 && g<0)
+cout<<"the product of 2  complex number : "<<g<<"i"<<"-"<<f<<endl;
+else
+cout<<"the product of 2 complex number : -"<<g<<"-"<<f<<endl;
+
+
+
+}
+
+};
+int main()
+{
+    Complex obj;
+     obj.get_numbers_with_Nazrana();
+     obj.calculate_numbers_with_Nazrana();
+}
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$44$$$$$$$$
+11)
+#include <iostream>
+using namespace std;
+
+class employee{
+
+    private :
+    string name;
+    int yj;
+    string  address;
+    public:
+    employee (string n,  int y , string add): name(n),yj(y),address(add){}
+
+
+    
+} ;
+int main(){
+  string name,name1,name2;
+    int yj,yj1,yj2;
+    string address, address1,address2;
+cout<<"enter the name of the 1st person = "<<endl;
+cin>>name;
+cout<<"enter 1st year of joinning = "<<endl;
+cin>>yj;
+cout<<"enter 1st address = "<<endl;
+cin>>address;
+employee ob(name,yj,address);
+cout<<endl;
+
+cout<<"enter the name of the 2nd person = "<<endl;
+cin>>name1;
+cout<<"enter 2nd year of joinning = "<<endl;
+cin>>yj1;
+cout<<"enter 2nd address = "<<endl;
+cin>>address1;
+employee ob1(name1,yj1,address1);
+cout<<endl;
+
+cout<<"enter the name of the 3rd person = "<<endl;
+cin>>name2;
+cout<<"enter 3rd year of joinning = "<<endl;
+cin>>yj2;
+cout<<"enter 3rd  address = "<<endl;
+cin>>address2;
+employee ob2(name2,yj2,address2);
+cout<<endl;
+//printing 
+cout<<"Name"<<"      "<<" Year of Joining"<<"      "<<"Address"<<endl;
+cout<<name<<"                   "<<yj<<"               "<<address<<endl;
+cout<<name1<<"                   "<<yj1<<"               "<<address1<<endl;
+cout<<name2<<"                   "<<yj2<<"               "<<address2<<endl;
+
+return 0;
+
+}
